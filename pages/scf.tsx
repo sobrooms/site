@@ -37,7 +37,6 @@ export default function useMs() {
     try {
       const cdTime = Date.now() + 1000 * 60 * 60 * 4
       const mcd = cdTime.toString();
-      localStorage.setItem("didnatsabeg", mcd) // 1h
       const cdsm: any = localStorage.getItem("didnatsabeg");
       const ttbi = parseInt(cdsm);
       if (ttbi > Date.now()) {
@@ -47,6 +46,7 @@ export default function useMs() {
           setMessage("");
           setEmail("");
           setTitle("");
+          localStorage.setItem("didnatsabeg", mcd)
           formRef.current.value = null;
         } else {
           alert("Something went wrong, please try again later.");
