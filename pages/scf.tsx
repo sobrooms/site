@@ -4,8 +4,7 @@ import { useState, useRef } from "react";
 import axios from "axios";
 import Head from 'next/head';
 import Link from "next/link";
-import type { NextPage } from 'next'
-const useNames: NextPage = () => {
+function ms() {
   const router = useRouter()
   const { name } = router.query;
   const [message, setMessage] = useState("");
@@ -195,4 +194,4 @@ const useNames: NextPage = () => {
     )
   }
 }
-export default useNames;
+export default ms;
