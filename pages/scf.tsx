@@ -186,7 +186,6 @@ export default function useMs() {
       </main>
     </div>
   )
-      )
     }
   } else if (name === "discord") {
     if (process.browser) {
