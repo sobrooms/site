@@ -37,23 +37,33 @@ export default function useMs() {
     try {
       const cdTime = Date.now() + 1000 * 60 * 60 * 4
       const mcd = cdTime.toString();
-      const cdsm: any = localStorage.getItem("didnatsabeg");
+      const cdsm: any = localStorage.getItem("didnatsabeg1");
       const ttbi = parseInt(cdsm);
-      if (ttbi > Date.now()) {
+      if (ttbi < Date.now() || cdsm === null) {
         const res = await axios.post("/api/beg_handler", params)
         if (res.status === 200) {
           alert("Begged successfully!");
           setMessage("");
           setEmail("");
           setTitle("");
-          localStorage.setItem("didnatsabeg", mcd)
+          localStorage.setItem("didnatsabeg1", mcd)
           formRef.current.value = null;
         } else {
           alert("Something went wrong, please try again later.");
         }
-      } else {
-        alert("You have hit begging cooldown")
-      }
+      } else if (ttbi > Date.now()) {
+          alert("You have hit begging cooldown")
+      } else if (cdsm === null) {
+          const res = await axios.post("/api/beg_handler", params)
+          if (res.status === 200) {
+            alert("Begged successfully!");
+            setMessage("");
+            setEmail("");
+            setTitle("");
+            localStorage.setItem("didnatsabeg1", mcd)
+            formRef.current.value = null;
+          }
+      } else {alert(`${mcd + " " + cdsm + " " + cdTime + " " + ttbi}`)}
     } catch (error) {
       alert(
         "An error occured while trying to send. Try submitting it again. Error: " + error
