@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 import axios from "axios";
 import Head from 'next/head';
 import Link from "next/link";
-function ms() {
+export default function useMs() {
   const router = useRouter()
   const { name } = router.query;
   const [message, setMessage] = useState("");
@@ -194,4 +194,3 @@ function ms() {
     )
   }
 }
-export default ms;
