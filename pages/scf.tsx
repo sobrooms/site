@@ -63,6 +63,7 @@ export default function useMs() {
   }
 
   if (name === "begforbeta") {
+    if (process.env.page1il === "allowed") {
     const handleImage = async (e: any) => {
       const file = e.target.files[0];
       const base64: any = await convertToBase64(file);
@@ -155,6 +156,38 @@ export default function useMs() {
         </div>
       </>
     );
+    } else {
+      return (
+        <div className="flex min-h-screen flex-col items-center justify-center py-2">
+      <Head>
+        <title>sobroo - page disabled</title>
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+        <h1 className="text-4xl font-bold">
+          This page is disabled
+        </h1>
+        <p className="text-4xl">
+          {process.env.disabledMessage1}
+        </p>
+        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+          <Link
+            href="/"
+          >
+            <div className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
+              <h3 className="text-2xl font-bold">go back &larr;</h3>
+              <p className="mt-4 text-xl">
+                go back to main page
+              </p>
+            </div>
+          </Link>
+        </div>
+      </main>
+    </div>
+  )
+      )
+    }
   } else if (name === "discord") {
     if (process.browser) {
       router.push("https://discord.gg/ruVzdxWMUP")
