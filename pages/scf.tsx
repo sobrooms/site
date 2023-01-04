@@ -169,7 +169,7 @@ export default function useMs() {
           This page is disabled
         </h1>
         <p className="text-4xl">
-          {process.env.disabledMessage1}
+          This page has been disabled due to spam
         </p>
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <Link
