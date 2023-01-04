@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-4xl font-bold">
-          <a 
+          <a
             className="dark:text-stone-400 text-stone-300 underline underline-offset-4"
             href="https://discord.gg/ruVzdxWMUP"
           >
@@ -49,9 +49,11 @@ const Home: NextPage = () => {
           </a>
           <Link
             href="./scf?name=begforbeta"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
-            <h3 className="text-2xl font-bold">beg for beta. &rarr;</h3>
+            <div className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600">
+              <h3 className="text-2xl font-bold">beg for beta. &rarr;</h3>
+              <p className="mt-4 text-xl">maybe u get beta. maybe not. who knows</p>
+            </div>
           </Link>
         </div>
       </main>
