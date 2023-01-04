@@ -157,11 +157,11 @@ export default function useMs() {
     );
   } else if (name === "discord") {
     if (process.browser) {
-      router.push("./discord")
+      router.push("https://discord.gg/ruVzdxWMUP")
     }
   } else if (name === "github") {
     if (process.browser) {
-      router.push("./github");
+      router.push("https://github.com/sobrooms");
     }
   } else {
     return (
