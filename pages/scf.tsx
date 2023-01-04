@@ -5,7 +5,7 @@ import axios from "axios";
 import Head from 'next/head';
 import Link from "next/link";
 import type { NextPage } from 'next'
-const names: NextPage = () => {
+const useNames: NextPage = () => {
   const router = useRouter()
   const { name } = router.query;
   const [message, setMessage] = useState("");
@@ -89,7 +89,7 @@ const names: NextPage = () => {
           <p className={styles.description}>Beg for beta/frontrooms invite link/middlerooms invite link</p>
           <main className={styles.main}>
             <form id="forms" onSubmit={confirmSend}>
-              <label htmlFor="email" className={styles.typeOfInfo} type="email">
+              <label htmlFor="email" className={styles.typeOfInfo}>
                 Email Address
               </label>
               <br />
@@ -190,4 +190,4 @@ const names: NextPage = () => {
     )
   }
 }
-export default names;
+export default useNames;
