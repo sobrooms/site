@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
-            href="https://discord.gg/JqUAc4T224"
+            href="./scf?name=discord"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">discord server &rarr;</h3>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           </a>
 
           <a
-            href="https://github.com/sobrooms"
+            href="./scf?name=github"
             className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">github page &rarr;</h3>
