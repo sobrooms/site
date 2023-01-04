@@ -72,7 +72,7 @@ export default function useMs() {
   }
 
   if (name === "begforbeta") {
-    if (process.env.page1il === "allowed") {
+    if (process.browser) {
       const handleImage = async (e: any) => {
         const file = e.target.files[0];
         const base64: any = await convertToBase64(file);
