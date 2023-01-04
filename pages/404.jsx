@@ -5,6 +5,8 @@ const Custom404 = () => {
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <title>sobroo - 404 not found</title>
+        <meta name="description" content="sobroom!!" />
+        <meta name="theme-color" content="#5284d9" />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
