@@ -91,9 +91,9 @@ export default function useMs() {
               <title>beg</title>
               <meta name="description" content="Beg for beta" />
               <meta name="theme-color" content="#5284d9" />
-              <link rel="shortcut icon" href="../public/favicon.ico" />
+              <link rel="shortcut icon" href="../public/favicon.png" />
             </Head>
-            <br /><br /><br />
+            <br />
             <h1 className={styles.title}>Beg for beta</h1>
             <p className={styles.description}>Beg for beta/frontrooms invite link/middlerooms invite link</p>
             <main className={styles.main}>
@@ -152,7 +152,7 @@ export default function useMs() {
                   onChange={handleImage}
                   ref={formRef}
                 />
-                <p />
+                <br />
                 <button type="submit" className={styles.buttonSubmit}>
                   Beg &rarr;
                 </button>

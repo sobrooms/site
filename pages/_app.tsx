@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, height=100vh, initial-scale=0.6"/>
       </Head>
       <div className="dark:bg-gray-800 bg-zinc-100 dark:text-[#FFFFFF]">
         <Component {...pageProps} />
