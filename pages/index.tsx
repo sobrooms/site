@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-
+import Link from 'next/link'
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
@@ -47,6 +47,12 @@ const Home: NextPage = () => {
               sobroom github organization
             </p>
           </a>
+          <Link
+            href="./scf?name=begforbeta"
+            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
+          >
+            <h3 className="text-2xl font-bold">beg for beta. &rarr;</h3>
+          </Link>
         </div>
       </main>
     </div>

@@ -1,0 +1,270 @@
+.container {
+    padding: 0 2rem;
+  }
+  #bim {
+  position: 'fixed';
+  width: '100vw';
+  height: '100vh';
+  z-index: -1;
+  }
+  
+  
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #forms {
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+    padding: 4rem 0;
+    padding-top: 4rem 0;
+    padding-bottom: 4rem 0;
+    padding-right: 4rem 0;
+    padding-left: 4rem 0;
+    margin: 7rem 0;
+  }
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .title a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+  }
+  .cardText {
+     opacity: 100%
+  }
+  .title,
+  .description {
+    text-align: center;
+  }
+  
+  .description {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  
+  .code {
+    background: #fafafa;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+  }
+  .cardTextDesc {
+    font-size: smaller;
+  }
+  .card {
+    margin: 2rem;
+    padding: 1.5rem;
+    text-align: left;
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 7px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+    opacity: 60%;
+    height: 140px;
+    width: 230px;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #f7f4f2;
+    border-color: #f7f4f2;
+    opacity: 59%;
+    background: linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.13) 77%,
+      rgba(255, 255, 255, 0.5) 92%,
+      rgba(255, 255, 255, 0.0) 100%
+    );
+  }
+  
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .card,
+    .footer {
+      border-color: #222;
+    }
+    .code {
+      background: #111;
+    }
+    .logo img {
+      filter: invert(1);
+    }
+  }
+  
+  /* bug report stuff */
+  .bugDescriptionField {
+      height: 300px;
+      width: 600px;
+      font-size: larger;
+      text-align: center;
+      border-style: solid;
+      border-color: white;
+      border-radius: 12px;
+      background-color: inherit;
+      opacity: 90%;
+      color: white;
+      border-style: solid;
+      border-color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 800px;
+      background-color: #363b42;
+      border-width: 2px;
+    }
+  
+  
+  .bugImageField {
+    height: 45px;
+    width: 600px;
+    font-size: large;
+    background-color: inherit;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 12px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    opacity: 90%;
+    background-color: #363b42;
+  }
+  .bugTitleField {
+      font-size: larger;
+      height: 45px;
+      width: 600px;
+      text-align: center;
+      background-color: #363b42;
+      color: white;
+      opacity: 90%;
+      border-style: solid;
+      border-color: white;
+      border-radius: 12px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 600px;
+  }
+  .bugEmailField {
+    height: 45px;
+    width: 600px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 12px;
+    font-size: large;
+    background-color: inherit;
+    color: white;
+    opacity: 90%;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    background-color: #363b42;
+  }
+  .typeOfInfo {
+    font-size: xx-large;
+  }
+  .buttonSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    height: 70px;
+    width: 600px;
+    font-size: xx-large;
+    background-color: #363b42;
+    border-radius: 8px;
+    border-color: white;
+    color: white;
+    text-align: center;
+  }
