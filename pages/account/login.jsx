@@ -1,5 +1,5 @@
 import { signIn, getProviders, getSession } from 'next-auth/react'
-import styles from '../../../styles/signin.module.css'
+import styles from '../../styles/signin.module.css'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
