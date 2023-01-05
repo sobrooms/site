@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useRef } from 'react';
 import LoadingBar from "react-top-loading-bar";
-export default function ldb() {
+export default function useLdb() {
   const loadingRef = useRef(null);
   const router = useRouter();
   useEffect(() => {
