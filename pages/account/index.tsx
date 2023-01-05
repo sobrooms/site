@@ -6,7 +6,7 @@ export default function Acc({ session }: any) {
   const route = useRouter()
   function goLogin() {
     if (process.browser) {
-      route.push("./account/login")
+      route.push("/account/login")
     }
   }
   return (
