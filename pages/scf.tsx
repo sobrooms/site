@@ -100,7 +100,6 @@ export default function useMs() {
             <Head>
               <title>beg</title>
               <meta name="description" content="Beg for beta" />
-              <meta name="theme-color" content="#5284d9" />
               <link rel="shortcut icon" href="../public/favicon.png" />
             </Head>
             <br />
