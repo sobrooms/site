@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router'
-function application({ Component, pageProps }: AppProps) {
+function useApplication({ Component, pageProps }: AppProps) {
   const router = useRouter();
   // page transition
   const variants = {
