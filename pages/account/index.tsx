@@ -65,7 +65,7 @@ export default function Acc({ session }: any) {
               )
               }
               <Link
-                href="/development/account/logout"
+                href="/account/logout"
                 className="text-3xl underline"
               ><p />Sign out</Link>
               <br /><br /><br />
