@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router'
-function MyApp({ Component, pageProps }: AppProps) {
+function application({ Component, pageProps }: AppProps) {
   const router = useRouter();
   // page transition
   const variants = {
@@ -50,4 +50,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default application

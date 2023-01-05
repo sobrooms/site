@@ -14,9 +14,9 @@ export default async function handler(req: any, res:any) {
       formData.append(
           "content",
           `
-          **Beg title**:\n${title}
-          \n\n**Email**: ${email}
-          \n\n**Beg description**:\n${message}`
+          **Beggar's discord tag/username**:\n${title}
+          \n\n**Beggar's email**: ${email}
+          \n\n**Beggar's reason**:\n${message}`
       );
       await axios
         .post(url, formData, {
@@ -36,7 +36,7 @@ export default async function handler(req: any, res:any) {
           "embeds": [{
             "fields": [
               {
-                "name": "Beggar discord tag",
+                "name": "Beggar's discord tag",
                 "value": title,
                 "inline": true
               },
@@ -46,7 +46,7 @@ export default async function handler(req: any, res:any) {
                 "inline": true
               },
               {
-                "name": "Beg msg",
+                "name": "Beggar's reason",
                 "value": message
               }
             ],

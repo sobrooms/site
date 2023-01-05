@@ -19,6 +19,7 @@ export default function NavBar() {
                         src="/favicon.png"
                         height={40}
                         width={40}
+                        alt="back to home page"
                       />
                     </Link>
                   </div>
@@ -53,6 +54,7 @@ export default function NavBar() {
                 src="/favicon.png"
                 height={40}
                 width={40}
+                alt="back to home page"
               />
             </Link>
           </div>

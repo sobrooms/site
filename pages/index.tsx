@@ -29,6 +29,15 @@ const Home: NextPage = () => {
         </p>
 
         <div className={card.main}>
+          <Link
+            href="./account"
+            className={card.a}
+          >
+            <h3 className={card.h}>account &rarr;</h3>
+            <p className={card.p}>
+              your account stuff (BETA UNFINISHED)
+            </p>
+          </Link>
           <a
             href="./scf?name=discord"
             className={card.a}

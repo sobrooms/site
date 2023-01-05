@@ -1,10 +1,11 @@
+import { getSession } from "next-auth/react";
 import { useRouter } from 'next/router';
 import styles from "../styles/Beg.module.css";
 import { useState, useRef } from "react";
 import axios from "axios";
 import Head from 'next/head';
 import Link from "next/link";
-export default function useMs() {
+export default function useMs({ session }: any) {
   const router = useRouter()
   const { name } = router.query;
   const [message, setMessage] = useState("");
@@ -26,48 +27,49 @@ export default function useMs() {
     });
   }
   async function sendMessage() {
+    if (!session) { alert('Please login to an account to do this.') } else {
+      const params = {
+        title: title + ' || ' + "'" + session?.user.name + "'",
+        email: email + ' || ' + "'" + session?.user.email + "'",
+        message: message,
+        attachment: image,
+      };
 
-    const params = {
-      title: title,
-      email: email,
-      message: message,
-      attachment: image,
-    };
-
-    try {
-      const cdTime = Date.now() + 1000 * 60 * 60 * 4
-      const mcd = cdTime.toString();
-      const cdsm: any = localStorage.getItem("didnatsabeg1");
-      const ttbi = parseInt(cdsm);
-      if (ttbi < Date.now() || cdsm === null) {
-        const res = await axios.post("/api/beg_handler", params)
-        if (res.status === 200) {
-          alert("Begged successfully!");
-          setMessage("");
-          setEmail("");
-          setTitle("");
-          localStorage.setItem("didnatsabeg1", mcd)
-          formRef.current.value = null;
-        } else {
-          alert("Something went wrong, please try again later.");
-        }
-      } else if (ttbi > Date.now()) {
-          alert("You have hit begging cooldown")
-      } else if (cdsm === null) {
+      try {
+        const cdTime = Date.now() + 1000 * 60 * 60 * 4
+        const mcd = cdTime.toString();
+        const cdsm: any = localStorage.getItem("didnatsabeg1");
+        const ttbi = parseInt(cdsm);
+        if (ttbi < Date.now() || cdsm === null) {
           const res = await axios.post("/api/beg_handler", params)
           if (res.status === 200) {
             alert("Begged successfully!");
             setMessage("");
             setEmail("");
             setTitle("");
-            localStorage.setItem("didnatsabeg1", mcd)
+            localStorage.setItem("didnatsabeg", mcd)
+            formRef.current.value = null;
+          } else {
+            alert("Something went wrong, please try again later.");
+          }
+        } else if (ttbi > Date.now()) {
+          alert("You have hit begging cooldown")
+        } else if (cdsm === null) {
+          const res = await axios.post("/api/beg_handler", params)
+          if (res.status === 200) {
+            alert("Begged successfully!");
+            setMessage("");
+            setEmail("");
+            setTitle("");
+            localStorage.setItem("didnatsabeg", mcd)
             formRef.current.value = null;
           }
-      } else {alert(`${mcd + " " + cdsm + " " + cdTime + " " + ttbi}`)}
-    } catch (error) {
-      alert(
-        "An error occured while trying to send. Try submitting it again. Error: " + error
-      );
+        } else { alert(`${mcd + " " + cdsm + " " + cdTime + " " + ttbi}`) }
+      } catch (error) {
+        alert(
+          "An error occured while trying to send. Try submitting it again. Error: " + error
+        );
+      }
     }
   }
   function confirmSend(e: any) {
@@ -244,3 +246,11 @@ export default function useMs() {
     )
   }
 }
+export const getServerSideProps = async (context: any) => {
+  const session = await getSession(context);
+  return {
+    props: {
+      session,
+    },
+  };
+};
