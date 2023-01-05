@@ -54,7 +54,7 @@ export default function Acc({ session }: any) {
                   alt={session?.user.name + ' \'s avatar'}
                   height={120}
                   width={120}
-                  className="border rounded-full"
+                  className="border rounded-full shadow-xl"
                 />
               </>
               <br />

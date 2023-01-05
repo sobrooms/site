@@ -29,7 +29,7 @@ export default function NavBar() {
             <div
               className="flex flex-shrink-0 items-center text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-300">
               <Clock
-                format={'h:mm:ss A'}
+                format={'h:mm:ss A - MMMM DD YYYY (ZZ)'}
                 ticking={true}
               />
             </div>

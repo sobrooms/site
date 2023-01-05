@@ -25,6 +25,9 @@ module.exports = {
         'spinesp': 'spine 100s linear infinite',
         'waving-hand': 'wave 3s linear infinite',
       },
+      fontSize: {
+        'cardDesc': ['12px', '20px'],
+      },
     },
   },
   plugins: [],

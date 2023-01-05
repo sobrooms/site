@@ -26,7 +26,7 @@ function useApplication({ Component, pageProps }: AppProps) {
         <Head>
           <link rel="icon" href="/favicon.png" />
           <meta name="viewport" content="width=device-width, height=100vh, initial-scale=0.6" />
-          <meta name="theme-color" content="#5284d9" />
+          <meta name="theme-color" content="#27272a" />
         </Head>
         <div className="dark:bg-gray-800 bg-zinc-300 dark:text-[#FFFFFF]">
           <AnimatePresence>
