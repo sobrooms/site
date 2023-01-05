@@ -50,4 +50,4 @@ function useApplication({ Component, pageProps }: AppProps) {
   )
 }
 
-export default application
+export default useApplication;
