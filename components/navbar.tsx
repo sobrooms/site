@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Clock from 'react-live-clock';
-import Image from 'next/image'
-export default function NavBar() {
-  const ip = require("ip");
+import Image from 'next/image';
+import { useRouter } from 'next/router'
+export default function useNavBar() {
+  const Router = useRouter();
+  const ip = require('ip').address()
   return (
     <>
       <nav className="bg-zinc-800">
@@ -36,9 +38,7 @@ export default function NavBar() {
             {process.env.NODE_ENV === "development" && (
               <div
                 className="flex flex-shrink-0 items-center text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-300">
-                <>
-                  development build / {ip.address()}
-                </>
+                development build / {ip} / ({ip}:3000{Router.pathname})
               </div>
             )}
             <div
