@@ -47,7 +47,7 @@ export default function useMs({ session }: any) {
             setMessage("");
             setEmail("");
             setTitle("");
-            localStorage.setItem("didnatsabeg", mcd)
+            localStorage?.setItem("didnatsabeg", mcd)
             formRef.current.value = null;
           } else {
             alert("Something went wrong, please try again later.");
@@ -67,8 +67,9 @@ export default function useMs({ session }: any) {
         } else { alert(`${mcd + " " + cdsm + " " + cdTime + " " + ttbi}`) }
       } catch (error) {
         alert(
-          "An error occured while trying to send. Try submitting it again. Error: " + error
+          "An error occured while trying to send. Try submitting it again.\n" + error
         );
+        console.error(error); console.log(error)
       }
     }
   }
