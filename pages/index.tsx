@@ -2,26 +2,29 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 const card = require("../constants/cardStyle.ts");
+const st = require('../constants/styles.ts')
 const Home: NextPage = () => {
+  let r = (Math.random() + 1).toString(36).substring(2);
+  let sobseedLnk = "./sobseed/" + r + "/";
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className={st.container}>
       <Head>
         <title>sobroo - home</title>
         <link rel="icon" href="/favicon.png" />
         <meta name="description" content="sobroom!!" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-4xl font-bold">
+      <main className={st.main}>
+        <h1 className={st.tags.h1.n1}>
           <a
-            className="dark:text-stone-400 text-stone-900 underline underline-offset-4"
+            className={st.tags.a.n1}
             href="https://discord.gg/ruVzdxWMUP"
           >
             sobroom
           </a>
         </h1>
-
-        <p className="mt-3 text-2xl">
+        <br />
+        <p className={st.tags.a.n1}>
           <code className="dark:bg-gray-500 rounded-md bg-gray-100 p-3 font-mono text-lg">
             sobroom = sob and pleadroom🥺😭
           </code>
@@ -80,9 +83,17 @@ const Home: NextPage = () => {
               <p className={card.p}>maybe u get beta. maybe not. who knows</p>
             </div>
           </Link>
+          <Link
+            href={sobseedLnk}
+          >
+            <div className={card.a}>
+              <h3 className={card.h}>SobSeedPS &rarr;</h3>
+              <p className={card.p}>sobroom&apos;s first ps 🥺🥺</p>
+            </div>
+          </Link>
         </div>
-      </main >
-    </div >
+      </main>
+    </div>
   )
 }
 
