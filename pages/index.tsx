@@ -36,7 +36,7 @@ const Home: NextPage = () => {
             className={card.a}
           >
             <h3 className={card.h}>account &rarr;</h3>
-            <p className={card.p}>
+            <p className={card.p.n2}>
               your account stuff (BETA UNFINISHED)
             </p>
           </Link>
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
             className={card.a}
           >
             <h3 className={card.h}>discord server &rarr;</h3>
-            <p className={card.p}>
+            <p className={card.p.n2}>
               sobroom discord server!!!!!
             </p>
           </a>
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             className={card.a}
           >
             <h3 className={card.h}>github page &rarr;</h3>
-            <p className={card.p}>
+            <p className={card.p.n2}>
               sobroom github organization
             </p>
           </a>
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
             className={card.a}
           >
             <h3 className={card.h}>main site &rarr;</h3>
-            <p className={card.p}>
+            <p className={card.p.n2}>
               main ps site
             </p>
           </a>
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
             className={card.a}
           >
             <h3 className={card.h}>docs site &rarr;</h3>
-            <p className={card.p}>
+            <p className={card.p.n2}>
               ps docs
             </p>
           </a>
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
           >
             <div className={card.a}>
               <h3 className={card.h}>beg for beta. &rarr;</h3>
-              <p className={card.p}>maybe u get beta. maybe not. who knows</p>
+              <p className={card.p.n2}>maybe u get beta. maybe not. who knows</p>
             </div>
           </Link>
           <Link
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
           >
             <div className={card.a}>
               <h3 className={card.h}>SobSeedPS &rarr;</h3>
-              <p className={card.p}>sobroom&apos;s first ps 🥺🥺</p>
+              <p className={card.p.n2}>sobroom&apos;s first ps 🥺🥺</p>
             </div>
           </Link>
         </div>

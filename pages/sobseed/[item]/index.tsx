@@ -39,7 +39,7 @@ export default function SobseedInd({ session }: any) {
                 className={card.a}
               >
                 <h3 className={card.h}>releases &rarr;</h3>
-                <p className={card.p}>
+                <p className={card.p.n2}>
                   builds of SobseedPS 😭
                 </p>
               </Link>

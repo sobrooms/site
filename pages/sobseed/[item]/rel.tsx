@@ -50,10 +50,10 @@ export default function SobseedRel() {
             className={card.a}
           >
             <h3 className={card.h}>SobseedPS v2.0 &rarr;</h3>
-            <p className={card.p}>
+            <p className={card.p.n1}>
               SobseedPS&apos;s second build. v2.0 still only works on 3.3 or below.
             </p>
-            <p className={card.p}>
+            <p className={card.p.n1}>
               Change default ConfigContainer (the script that creates a config.json file if there isn’t any, which is located at: &quot;src/main/java/emu/grasscutter/config&quot;). Also, change EN-US.json translation
             </p>
           </Link>
