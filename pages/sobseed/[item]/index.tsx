@@ -29,9 +29,7 @@ export default function SobseedInd({ session }: any) {
             </h1>
             <br />
             <p className={s.tags.a.n1}>
-              <code className="dark:bg-gray-500 rounded-md bg-gray-100 p-3 font-mono text-lg">
-                SobseedPS is sobroom&apos;s own private server for an anime game
-              </code>
+              SobseedPS is sobroom&apos;s own private server for an anime game
             </p>
             <div className={card.main}>
               <Link
@@ -41,6 +39,9 @@ export default function SobseedInd({ session }: any) {
                 <h3 className={card.h}>releases &rarr;</h3>
                 <p className={card.p.n2}>
                   builds of SobseedPS 😭
+                </p>
+                <p className={card.p.n2}>
+                  Sobseed is actually &quot;WindSeed&quot; but replaced with &quot;Sob&quot; (thx lyuu for the idea)
                 </p>
               </Link>
             </div>

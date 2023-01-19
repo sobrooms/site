@@ -8,7 +8,7 @@ export const tags = {
     n1: "dark:text-stone-400 text-stone-900 underline underline-offset-4"
   },
   p: {
-    n1: "mt-3 text-2xl"
+    n1: "mt-4 text-2xl"
   }
 }
 export const ctags = {

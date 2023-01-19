@@ -25,9 +25,7 @@ const Home: NextPage = () => {
         </h1>
         <br />
         <p className={st.tags.a.n1}>
-          <code className="dark:bg-gray-500 rounded-md bg-gray-100 p-3 font-mono text-lg">
-            sobroom = sob and pleadroom🥺😭
-          </code>
+          sobroom = sob and pleadroom🥺😭
         </p>
 
         <div className={card.main}>
