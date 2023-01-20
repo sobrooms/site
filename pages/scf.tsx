@@ -104,6 +104,7 @@ export default function useMs({ session }: any) {
               <title>beg</title>
               <meta name="description" content="Beg for beta" />
               <link rel="shortcut icon" href="../public/favicon.png" />
+              <meta name="theme-color" content="#27272a" />
             </Head>
             <br />
             <h1 className={styles.title}>Beg for beta</h1>

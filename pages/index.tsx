@@ -12,6 +12,7 @@ const Home: NextPage = () => {
         <title>sobroo - home</title>
         <link rel="icon" href="/favicon.png" />
         <meta name="description" content="sobroom!!" />
+        <meta name="theme-color" content="#27272a" />
       </Head>
 
       <main className={st.main}>

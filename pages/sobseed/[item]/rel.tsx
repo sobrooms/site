@@ -11,9 +11,10 @@ export default function SobseedRel() {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center py-2">
         <Head>
-          <title>sobroo - home</title>
+          <title>sobroo - sobseed/releases</title>
           <link rel="icon" href="/favicon.png" />
-          <meta name="description" content="sobroom!!" />
+          <meta name="description" content="SobseedPS - Releases" />
+          <meta name="theme-color" content="#27272a" />
         </Head>
 
         <main className={st.main}>

@@ -6,6 +6,7 @@ const Custom404 = () => {
       <Head>
         <title>sobroo - 404 not found</title>
         <link rel="icon" href="/favicon.png" />
+        <meta name="theme-color" content="#27272a" />
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
