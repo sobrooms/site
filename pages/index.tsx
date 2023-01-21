@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 const card = require("../constants/cardStyle.ts");
-const st = require('../constants/styles.ts')
+const st = require('../constants/styles.ts');
 const Home: NextPage = () => {
   let r = (Math.random() + 1).toString(36).substring(2);
   let sobseedLnk = "./sobseed/" + r + "/";
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         </h1>
         <br />
         <p className={st.tags.a.n1}>
-          sobroom = sob and pleadroom🥺😭
+          sobroom = sob and pleadroom
         </p>
 
         <div className={card.main}>
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           >
             <h3 className={card.h}>account &rarr;</h3>
             <p className={card.p.n2}>
-              your account stuff (BETA UNFINISHED)
+              your account stuf
             </p>
           </Link>
           <a

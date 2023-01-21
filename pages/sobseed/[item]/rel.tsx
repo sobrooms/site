@@ -26,27 +26,27 @@ export default function SobseedRel() {
             >
               Latest version of SobseedPS
             </a><br/>
-            -----------------------------
+            ----------------------------------
           </h1>
           <div className={card.main}>
             <Link
-              href="../../SobSeed/builds/sobseed_v2.0.jar"
+              href="../../SobSeed/builds/sobseed_v2.1.jar"
               className={card.a}
             >
-              <h3 className={card.h}>SobseedPS v2.0 &rarr;</h3>
-              <p className={card.p.n1}>
-                SobseedPS&apos;s second build. v2.0 still only works on 3.3
+              <h3 className={card.h}>SobseedPS v2.1 &rarr;</h3>
+              <p className={card.p}>
+                Third build!!
               </p>
-              <p className={card.p.n1}>
-                Change default ConfigContainer (the script that creates a config.json file if there isn’t any, which is located at: &quot;src/main/java/emu/grasscutter/config&quot;). Also, change EN-US.json translation
+              <p className={card.p}>
+                Add /windy command, add windy path config to ConfigContainer
               </p>
             </Link>
           </div>
           <br /><br />
           <h1 className="text-4xl font-bold">
-            ------------------------------<br />
+            ----------------------------------<br />
             Other versions of SobseedPS<br />
-            ------------------------------
+            ----------------------------------
           </h1>
           <div className={card.main}>
             <Link
@@ -59,6 +59,19 @@ export default function SobseedRel() {
               </p>
               <p className={card.p}>
                 First release, so no changelog is gonna be put here...
+              </p>
+            </Link>
+            <p className="opacity-0">----</p>
+            <Link
+              href="../../SobSeed/builds/sobseed_v2.0.jar"
+              className={card.a}
+            >
+              <h3 className={card.h}>SobseedPS v2.0 &rarr;</h3>
+              <p className={card.p.n1}>
+                SobseedPS&apos;s second build. v2.0 still only works on 3.3
+              </p>
+              <p className={card.p.n1}>
+                Change default ConfigContainer (the script that creates a config.json file if there isn’t any, which is located at: &quot;src/main/java/emu/grasscutter/config&quot;). Also, change EN-US.json translation
               </p>
             </Link>
           </div>
