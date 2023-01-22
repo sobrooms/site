@@ -5,7 +5,8 @@ export default function useSob(res: NextApiResponse, req: NextApiRequest) {
   const { versionNum }: any = router.query;
   const versions = [
     "v1",
-    "v2"
+    "v2",
+    "v2.1.1"
   ]
   if (versions.includes(versionNum)) {
     if (versionNum === "v1") {
