@@ -2,7 +2,8 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { useRouter } from 'next/router'
 export default function useSob(res: NextApiResponse, req: NextApiRequest) {
     const router = useRouter()
-    const { versionNum }: any = router.query;
+    const { versionNum }: String = router.query;
+    const latest = "v2.1.1";
     if (versionNum === "v1") {
         return res.status(200).json({
             details: 'SobseedPS\'s first build. v1.0 should only work on 3.3 or below (can be higher version depending on resources, when i say this i meant 3.3.50)',
