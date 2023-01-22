@@ -22,5 +22,12 @@ export default function useSob(res: NextApiResponse, req: NextApiRequest) {
         download: 'https://sobroom.rrryfoo.cf/SobSeed/builds/sobseed_v2.0.jar'
       })
     }
+    if (versionNum === "v2.1.1") {
+      return res.status(200).json({
+        details: 'fourth build!!',
+        changes: 'Add /sob command and fix windy',
+        download: 'https://sobroom.rrryfoo.cf/SobSeed/builds/sobseed_v2.1.1.jar'
+      })
+    }
   }
 }
