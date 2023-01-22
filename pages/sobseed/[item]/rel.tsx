@@ -25,20 +25,20 @@ export default function SobseedRel() {
               href="https://discord.gg/ruVzdxWMUP"
             >
               Latest version of SobseedPS
-            </a><br/>
+            </a><br />
             ----------------------------------
           </h1>
           <div className={card.main}>
-            <Link
-              href="../../SobSeed/builds/sobseed_v2.1.jar"
+          <Link
+              href="../../SobSeed/builds/sobseed_v2.1.1.jar"
               className={card.a}
             >
-              <h3 className={card.h}>SobseedPS v2.1 &rarr;</h3>
+              <h3 className={card.h}>SobseedPS v2.1.1 &rarr;</h3>
               <p className={card.p}>
-                Third build!!
+                Fourth build
               </p>
               <p className={card.p}>
-                Add /windy command, add windy path config to ConfigContainer
+                fix windy command and add /sob command :pleading_face:
               </p>
             </Link>
           </div>
@@ -72,6 +72,18 @@ export default function SobseedRel() {
               </p>
               <p className={card.p.n1}>
                 Change default ConfigContainer (the script that creates a config.json file if there isn’t any, which is located at: &quot;src/main/java/emu/grasscutter/config&quot;). Also, change EN-US.json translation
+              </p>
+            </Link>
+            <Link
+              href="../../SobSeed/builds/sobseed_v2.1.jar"
+              className={card.a}
+            >
+              <h3 className={card.h}>SobseedPS v2.1 &rarr;</h3>
+              <p className={card.p}>
+                Third build!!
+              </p>
+              <p className={card.p}>
+                Add /windy command, add windy path config to ConfigContainer
               </p>
             </Link>
           </div>
