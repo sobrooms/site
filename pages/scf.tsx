@@ -217,6 +217,10 @@ export default function useMs({ session }: any) {
     if (process.browser) {
       router.push("https://github.com/sobrooms");
     }
+  } else if (name === "trello") {
+    if (process.browser) {
+      router.push("https://trello.com/b/8l8OJznS/findingwhoaskedinohio");
+    }
   } else {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center py-2">
