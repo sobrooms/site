@@ -6,7 +6,7 @@ const options = {
     DiscordProvider({
       clientId: process.env.did,
       clientSecret: process.env.dsec,
-      authorization: { params: { scope: 'identify email guilds connections guilds.members.read' } },
+      authorization: { params: { scope: 'identify email' } },
     }),
   ],
   session: {
