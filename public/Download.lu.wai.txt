@@ -1,1 +1,1 @@
-https://github.com/sobrooms/FindingWhoAskedInOhioLauncher/releases/download/v0.0.1/0.0.1_alpha.zip
+https://github.com/sobrooms/FindingWhoAskedInOhioLauncher/releases/download/v.0.0.2/alpha_v0.0.2.zip
