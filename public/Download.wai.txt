@@ -1,1 +1,1 @@
-https://github.com/sobrooms/FindingWhoAskedInOhio/releases/download/Alpha-0.5.4/FWAiOAlpha-0.5.4.zip
+https://github.com/sobrooms/FindingWhoAskedInOhio/releases/download/Alpha-0.0.5/FWAiO-Alpha-0.0.5.zip
