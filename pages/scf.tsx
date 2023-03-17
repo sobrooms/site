@@ -29,8 +29,8 @@ export default function useMs({ session }: any) {
   async function sendMessage() {
     if (!session) { alert('Please login to an account to do this.') } else {
       const params = {
-        title: title + ' || ' + "'" + session?.user.name + "'",
-        email: email + ' || ' + "'" + session?.user.email + "'",
+        title: title + ' or ' + "'" + session?.user.name + "'",
+        email: email + ' or ' + "'" + session?.user.email + "'",
         message: message,
         attachment: image,
       };
