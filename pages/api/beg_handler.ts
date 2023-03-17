@@ -3,20 +3,24 @@ const axios = require("axios");
 // npm install form-data
 const FormData = require("form-data");
 const url = process.env.beta
-
+let extraOptionalDetails = "";
 export default async function handler(req: any, res:any) {
+  if (process.env.NODE_ENV == "development") {
+    extraOptionalDetails = "Sent from development build..."
+  }
   if (req.method === "POST") {
     const { title, email, message, attachment } = req.body;
     if (attachment) {
       const buffer = Buffer.from(attachment.split(",")[1], "base64");
       const formData = new FormData();
-      formData.append("file", buffer, "attachment.png");
+      formData.append("file", buffer);
       formData.append(
           "content",
           `
-          **Beggar's discord tag/username**:\n${title}
-          \n\n**Beggar's email**: ${email}
-          \n\n**Beggar's reason**:\n${message}`
+          **username**:\n${title}
+          \n\n**email**: ${email}
+          \n\n**reason**:\n${message}
+          ${extraOptionalDetails}`
       );
       await axios
         .post(url, formData, {
@@ -36,17 +40,17 @@ export default async function handler(req: any, res:any) {
           "embeds": [{
             "fields": [
               {
-                "name": "Beggar's discord tag",
+                "name": "discord tag",
                 "value": title,
                 "inline": true
               },
               {
-                "name": "Beggar's email",
+                "name": "email",
                 "value": email,
                 "inline": true
               },
               {
-                "name": "Beggar's reason",
+                "name": "reason",
                 "value": message
               }
             ],
