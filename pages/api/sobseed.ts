@@ -1,7 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default async function sob(res: NextApiResponse, req: NextApiRequest) {
-        return res.status(200).json({
+        res.status(200).json({
         "latest": "v2.1.1",
         "v1.0": {
             details: 'SobseedPS\'s first build. v1.0 should only work on 3.3 or below (can be higher version depending on resources, when i say this i meant 3.3.50)',
