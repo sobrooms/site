@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-export default function useSob(res: NextApiResponse, req: NextApiRequest) {
+
+export default async function sob(res: NextApiResponse, req: NextApiRequest) {
         return res.status(200).json({
         "latest": "v2.1.1",
         "v1.0": {
