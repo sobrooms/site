@@ -87,7 +87,7 @@ const Home: NextPage = () => {
           >
             <div className={card.a}>
               <h3 className={card.h}>SobSeedPS &rarr;</h3>
-              <p className={card.p.n2}>sobroom&apos;s first ps 🥺🥺</p>
+              <p className={card.p.n2}>stuck in 3.3 pls help</p>
             </div>
           </Link>
         </div>
