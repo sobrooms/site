@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         </h1>
         <br />
         <p className={st.tags.a.n1}>
-          sobroom = sob and pleadroom
+          hi 
         </p>
 
         <div className={card.main}>
